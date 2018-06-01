@@ -24,7 +24,6 @@ myVue.prototype._observe = function (obj) {
     for (var key in obj) {
         if (obj.hasOwnProperty(key)) {
             // 按照前面的数据 this._binding = {number: _directives: []}
-            console.log(this);
             this._binding[key] = {
                 _directives: []
             };
