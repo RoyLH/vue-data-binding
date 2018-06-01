@@ -17,17 +17,19 @@
 
     <script src="./myVue.js"></script>
     <script>
-        var app = new myVue({
-            el: '#app',
-            data: {
-                number: 0
-            },
-            methods: {
-                increment: function () {
-                    this.number++;
+        window.onload = function () {
+            var app = new myVue({
+                el: '#app',
+                data: {
+                    number: 0
                 },
-            }
-        });
+                methods: {
+                    increment: function () {
+                        this.number++;
+                    }
+                }
+            });
+        };
     </script>
 </body>
     
