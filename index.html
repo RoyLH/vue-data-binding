@@ -11,6 +11,13 @@
         <form action="">
             <input type="text" v-model="number">
             <button type="button" v-click="increment">增加</button>
+            <!--当button在form表单时，点击button会自动触发button的默认事件，也就是刷新当前页面。那么如何阻止呢：-->
+            <!--有两种方式：-->
+            <!--一：将<button></button>改为<input type="button">  或者直接在<button>中添加属性 type="button".-->
+            <!--二：在button的点击事件中-->
+            <!--$('btn').click(function(e){-->
+            <!--e.preventDefult();-->
+            <!--});-->
         </form>
         <h3 v-bind="number"></h3>
     </div>
